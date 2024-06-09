@@ -1,5 +1,4 @@
 CC=gcc
-CFLAGS=-Wall -Wextra -std=c11 -pedantic
 
-vm: vm.c
-	$(CC) $(CFLAGS) -o vm vm.c
+vm: vm.c main.c
+	$(CC) vm.c main.c -o vm
